@@ -1,0 +1,25 @@
+<UI version="4.0" >
+ <class>RaiserWindowClass</class>
+ <widget class="QWidget" name="RaiserWindowClass" >
+  <property name="objectName" >
+   <string notr="true">RaiserWindowClass</string>
+  </property>
+  <property name="geometry" >
+   <rect>
+	<x>0</x>
+	<y>0</y>
+	<width>600</width>
+	<height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>RaiserWindow</string>
+  </property>
+ </widget>
+ <layoutDefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources>
+   <include location="RaiserWindow.qrc"/>
+ </resources>
+ <connections/>
+</UI>
