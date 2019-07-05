@@ -1,10 +1,10 @@
-#include "RaiserWindow.h"
+﻿#include "RaiserWindow.h"
 #include <QtWidgets/QApplication>
-
+#include "AnalogClockWindow.h"
 int main(int argc, char *argv[])
 {
-	QApplication a(argc, argv);
-	RaiserWindow w;
+	QGuiApplication app(argc, argv);
+	AnalogClockWindow w;
 	w.show();
-	return a.exec();
+	return app.exec();
 }
