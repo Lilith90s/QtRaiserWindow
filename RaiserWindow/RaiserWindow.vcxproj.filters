@@ -39,9 +39,18 @@
     <ClCompile Include="AnalogClockWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TurnTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UiCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="RaiserWindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="UiCtrl.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -57,6 +66,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnalogClockWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TurnTable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

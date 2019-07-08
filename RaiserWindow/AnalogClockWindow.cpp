@@ -18,6 +18,7 @@ void AnalogClockWindow::timerEvent(QTimerEvent *event)
 
 void AnalogClockWindow::render(QPainter * painter)
 {
+
 	static const QPoint hourHand[3] = {
 		QPoint(7,8),
 		QPoint(-7,8),

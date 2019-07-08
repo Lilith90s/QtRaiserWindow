@@ -14,6 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -21,12 +22,25 @@ QT_BEGIN_NAMESPACE
 class Ui_RaiserWindowClass
 {
 public:
+    QVBoxLayout *verticalLayout_2;
+    QVBoxLayout *v_mainLayout;
 
     void setupUi(QWidget *RaiserWindowClass)
     {
         if (RaiserWindowClass->objectName().isEmpty())
             RaiserWindowClass->setObjectName(QStringLiteral("RaiserWindowClass"));
-        RaiserWindowClass->resize(600, 400);
+        RaiserWindowClass->resize(696, 567);
+        verticalLayout_2 = new QVBoxLayout(RaiserWindowClass);
+        verticalLayout_2->setSpacing(6);
+        verticalLayout_2->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        v_mainLayout = new QVBoxLayout();
+        v_mainLayout->setSpacing(0);
+        v_mainLayout->setObjectName(QStringLiteral("v_mainLayout"));
+        v_mainLayout->setSizeConstraint(QLayout::SetDefaultConstraint);
+
+        verticalLayout_2->addLayout(v_mainLayout);
+
 
         retranslateUi(RaiserWindowClass);
 
